@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* html,
+body
+{
+    overflow: hidden;
+} */
+
+html{
+    background: #1e1a20;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+
+.section
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.section h1{
+    text-transform: uppercase;
+    color: hsl(45, 100%, 72%);
+    font-size: 7vmin;
+    margin-bottom: 20px;
+}
+.section p{
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    gap: 10px;
+    justify-content: center;
+    min-width: 300px;
+    max-width: 500px;
+}
+.grid .item{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: hsla(240, 1%, 17%, 0.5);
+    backdrop-filter: blur(5px);
+    border: 1px solid hsl(0, 0%, 22%);
+    border-radius: 12px;
+    box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+}
+
+.bloc {
+    color: white;
+    height: fit-content;
+    padding: 30px 15px;
+
+    background: hsla(240, 1%, 17%, 0.5);
+    backdrop-filter: blur(5px);
+    border: 1px solid hsl(0, 0%, 22%);
+    border-radius: 12px;
+    box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+}
+.bloc1{
+    width: 60%;
+}
+.bloc3{
+    width: 130%;
+}
+form input, form textarea{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 98%);
+    margin: auto;
+    display: block;
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    font-size: 15px;
+    border: 1px solid hsl(0, 0%, 22%);
+    border-radius: 14px;
+    background:none;
+    outline: none;
+}
+form input:focus, form textarea:focus {
+    border-color: hsl(45, 100%, 72%);
+}
+
+
+section:nth-child(odd)
+{
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width:850px){
+    .bloc1{
+        width: 90%;
+    }
+    .bloc2{
+        width: 90%;
+    }
+    .section:nth-child(odd){
+        padding: 20px;
+        justify-content: center;
+    }
+    .bloc3{
+        width: 95%;
+    }
+    .section
+    {
+        padding: 20px;
+        justify-content: center;
+    }
+    .grid{
+        max-width: unset;
+    }
+
+
+}

@@ -1,0 +1,30 @@
+# Dossiers générés par Vite
+/dist/
+/.vite/
+
+# Fichiers de cache de Vite
+.rpt2_cache/
+.vite/
+
+# Dossier node_modules
+/node_modules/
+
+# Dossiers spécifiques à certains éditeurs de code
+.idea/
+.vscode/
+
+# Fichiers de sauvegarde
+*.swp
+*~
+
+# Fichiers de logs
+*.log
+
+# Fichiers de configuration d'environnement local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Autres exclusions spécifiques au projet
+
